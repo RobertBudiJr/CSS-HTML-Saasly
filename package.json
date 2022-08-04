@@ -1,0 +1,41 @@
+{
+  "name": "GDI",
+  "version": "0.1.0",
+  "description": "GDI Website",
+  "main": "index.js",
+  "scripts": {},
+  "engines": {
+    "npm": ">=6.13.4"
+  },
+  "keywords": [
+    "GDI",
+    "Global Digital Intelligence",
+    "website"
+  ],
+  "author": "gdiwebdev",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "bootstrap": "^4.6.0",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-concat": "*",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-jshint": "*",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^5.0.0",
+    "gulp-sequence": "^1.0.0",
+    "gulp-sourcemaps": "2.6.4",
+    "gulp-uglify": "^3.0.1",
+    "gulp-version-number": "^0.2.4",
+    "gulp-watch": "^5.0.1",
+    "jquery": "^3.6.0",
+    "node-sass": "^6.0.1",
+    "run-sequence": "^2.2.0"
+  },
+  "devDependencies": {
+    "gulp-load-plugins": "^2.0.7",
+    "gulp-rev": "^9.0.0",
+    "sass": "^1.43.4"
+  }
+}

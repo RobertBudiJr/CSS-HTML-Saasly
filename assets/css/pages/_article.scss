@@ -1,0 +1,49 @@
+.article {
+  padding: 5em 10.625em;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .article__heading {
+    color: $color-dark-deep-blue;
+
+    margin: 0;
+  }
+
+  .article__cards {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5em;
+
+    margin-top: 4em;
+
+    .article__card {
+      border-radius: 10px;
+      overflow: hidden;
+
+      width: 22.1em;
+
+      .card__body {
+        padding: 1.5em;
+
+        .card__heading {
+          color: $color-dark-blue;
+          margin: 0;
+
+          word-break: keep-all;
+        }
+
+        .card__fill {
+          margin: 0;
+          margin-top: 0.75em;
+        }
+      }
+    }
+  }
+
+  .article__btn {
+    margin-top: 7em;
+  }
+}

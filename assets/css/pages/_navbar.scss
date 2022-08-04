@@ -1,0 +1,61 @@
+.navbar {
+  height: 86px;
+  padding: 0 10.625em;
+
+  display: flex;
+  justify-content: center;
+
+  color: $color-white;
+
+  cursor: pointer;
+
+  .navbar__left {
+    .navbar__title {
+      margin: 1.625rem 0;
+    }
+  }
+
+  .navbar__mid {
+    .navbar__list {
+      display: flex;
+      gap: 2.5em;
+
+      margin: 2em 0;
+      margin-left: 10em;
+      margin-right: 8em;
+
+      .navbar__item {
+        list-style: none;
+      }
+
+      .navbar__item:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+
+  .navbar__right {
+    margin: 1.25em 0;
+
+    display: flex;
+    gap: 2.25em;
+
+    .navbar__sign-in,
+    .navbar__sign-up {
+      text-decoration: none;
+      padding: 0.75em 0.7em;
+      text-align: center;
+
+      color: $color-white;
+    }
+
+    .navbar__sign-up {
+      outline: solid 2px $color-white;
+      border-radius: 10px;
+    }
+  }
+
+  .active {
+    font-weight: 700;
+  }
+}
