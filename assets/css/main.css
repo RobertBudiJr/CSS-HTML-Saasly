@@ -4,6 +4,7 @@
 
 html {
   width: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -210,15 +211,16 @@ h4 {
   padding: 0.75em 0.7em;
   text-align: center;
   color: #ffffff;
-}
-.navbar .navbar__right .navbar__sign-up {
-  outline: solid 2px #ffffff;
   border-radius: 10px;
   transition: 0.2s;
 }
+.navbar .navbar__right .navbar__sign-in:hover,
 .navbar .navbar__right .navbar__sign-up:hover {
   background-color: #ffffff;
   color: #006fba;
+}
+.navbar .navbar__right .navbar__sign-up {
+  outline: solid 2px #ffffff;
 }
 .navbar .active {
   font-weight: 700;
