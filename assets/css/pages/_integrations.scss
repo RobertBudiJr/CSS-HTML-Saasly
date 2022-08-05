@@ -1,61 +1,94 @@
 .integ {
   height: 1050px;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-
   background-image: url(../img/bg-integrations.png);
   background-size: 1749px;
   background-repeat: no-repeat;
   background-position: -13.5em 0;
 
-  padding: 18.56em 16.875em;
+  padding: 13.56em 16.875em;
 
-  .integ__heading {
-    margin-bottom: 4em;
+  @include media-query(lg) {
+    height: 1560px;
 
-    .integ__heading-text {
-      color: $color-white;
-    }
+    background-image: url(../img/bg-integrations-2.png);
+    background-size: 1535px;
+    background-position: -35.5rem 0;
+
+    padding: 10.56em 7.875em;
+
+    clip-path: polygon(0% 0%, 100% 0, 100% 93%, 0 100%);
   }
 
-  .integ__cards {
+  .integ__container {
     display: flex;
-    flex-direction: row;
-    gap: 1.5em;
     align-items: center;
-    text-align: center;
+    justify-content: center;
+    flex-direction: column;
 
-    .integ__logo {
-      margin: 0 6.875em 0 6.875em;
-    }
+    .integ__heading {
+      margin-bottom: 4em;
 
-    .integ__text {
-      color: $color-grey;
-      margin-top: 0.75em;
-    }
-
-    .integ__card {
-      background-color: $color-white;
-      border-radius: 10px;
-      padding: 1.5em;
-
-      .integ__title {
-        margin-top: 0.8em;
-
-        .integ__title--fb,
-        .integ__title--twt,
-        .integ__title--ggl {
-          color: $color-dark-blue;
-          margin: 0;
-        }
+      @include media-query(lg) {
+        margin-bottom: 2em;
       }
 
-      .integ__btn {
-        margin-top: 5em;
-        margin-bottom: 2em;
+      .integ__heading-text {
+        color: $color-white;
+      }
+    }
+
+    .integ__cards {
+      display: flex;
+      flex-direction: row;
+      gap: 1.5em;
+      align-items: center;
+      text-align: center;
+
+      @include media-query(lg) {
+        flex-wrap: wrap;
+      }
+
+      .integ__card {
+        background-color: $color-white;
+        border-radius: 10px;
+        padding: 1.5em;
+
+        @include media-query(lg) {
+          padding: 1.5em 10.5em;
+        }
+
+        .card {
+          width: 284px;
+          height: 342px;
+
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          .integ__icon {
+            width: 64px;
+          }
+
+          .integ__card-body {
+            padding-top: 0;
+
+            .integ__heading {
+              color: $color-dark-blue;
+
+              margin: 0;
+              margin-top: 1em;
+            }
+
+            .integ__para {
+              color: $color-grey;
+
+              margin-top: 0.75em;
+              margin-bottom: 3em;
+            }
+          }
+        }
       }
     }
   }

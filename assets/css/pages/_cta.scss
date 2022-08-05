@@ -3,30 +3,31 @@
 
   text-align: center;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  .cta__text {
-    .cta__heading {
-      color: $color-dark-deep-blue;
-      margin: 0;
-    }
-
-    .cta__para {
-      color: $color-grey;
-
-      margin: 0 26.5em;
-      margin-top: 1.5em;
-    }
-  }
-
-  .cta__btn {
-    margin-top: 4.25em;
-
+  .cta__container {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: 1.5em;
+    .cta__text {
+      .cta__heading {
+        color: $color-dark-deep-blue;
+        margin: 0;
+      }
+
+      .cta__para {
+        color: $color-grey;
+
+        margin: 0 26.5em;
+        margin-top: 1.5em;
+      }
+    }
+
+    .cta__btn {
+      margin-top: 4.25em;
+
+      display: flex;
+      align-items: center;
+      gap: 1.5em;
+    }
   }
 }

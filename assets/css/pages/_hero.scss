@@ -1,61 +1,96 @@
 .home {
-  background-image: url(../img/bg-hero.png);
-  background-size: 2330px;
-  background-repeat: no-repeat;
-  background-position: -16em 0;
+  // background-image: url(../img/bg-hero.png);
+  // background-size: 2330px;
+  // background-repeat: no-repeat;
+  // background-position: -16em 0;
 }
 .hero-container {
-  width: 1100px;
-
   text-align: center;
-  margin: 0 10.625em;
 
   color: $color-white;
 
-  .hero__text {
-    margin: 0 10.7em 0 10.7em;
-    margin-top: 5em;
-    .hero__main-head {
-      margin-bottom: 0;
-    }
-    .hero__sub-head {
-      margin-top: 1.5em;
-      margin-left: 9.25em;
-      margin-right: 9.25em;
-    }
-  }
+  .hero-bg {
+    position: relative;
 
-  .hero__button {
-    margin: 5em 21.75em;
-    .hero__btn-trial {
-      margin-left: 1.5em;
-    }
+    width: 100%;
 
-    .hero__btn-trial:hover {
-      letter-spacing: 0.05em;
+    .hero__bg-pic {
+      position: absolute;
+      top: -11em;
+      left: -15em;
+
+      width: 1680px;
+      height: 806px;
+
+      z-index: -1;
+
+      @include media-query(lg) {
+        width: 1230px;
+        height: 930px;
+      }
     }
   }
 
-  .hero__dashboard {
-    .hero__dashboard-img {
-      width: 1016px;
-      height: 614px;
+  .container {
+    .hero__text {
+      margin: 11em 10.7em 0 10.7em;
+      .hero__main-head {
+        margin-bottom: 0;
+      }
+      .hero__sub-head {
+        margin-top: 1.5em;
+        margin-left: 9.25em;
+        margin-right: 9.25em;
+
+        @include media-query(lg) {
+          margin-left: 6.25em;
+          margin-right: 6.25em;
+        }
+      }
     }
 
-    margin-bottom: 1.92em;
-  }
+    .hero__button {
+      margin: 3em 21.75em;
 
-  .hero__brand {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2.625em;
+      @include media-query(lg) {
+        margin: 2.5em 17.75em;
+      }
 
-    margin-bottom: 5em;
+      .hero__btn-trial {
+        margin-left: 1.5em;
+      }
+    }
 
-    .hero__item {
+    .hero__dashboard {
+      .hero__dashboard-img {
+        width: 1016px;
+        height: 614px;
+
+        @include media-query(lg) {
+          width: 858px;
+          height: 518.5px;
+        }
+      }
+
+      margin-bottom: 1.92em;
+    }
+
+    .hero__brand {
       display: flex;
-      gap: 0.8em;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 2.625em;
+
+      margin-bottom: 5em;
+
+      @include media-query(lg) {
+      }
+
+      .hero__item {
+        display: flex;
+        gap: 0.8em;
+      }
     }
   }
 }

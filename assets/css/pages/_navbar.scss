@@ -1,13 +1,24 @@
 .navbar {
+  position: fixed;
+  top: 0;
   height: 86px;
-  padding: 0 10.625em;
+  width: 100%;
+  padding: 0;
 
   display: flex;
   justify-content: center;
+  align-items: center;
 
   color: $color-white;
+  background-color: rgba($color-dark-blue, 0.5);
+  backdrop-filter: blur(10px);
 
   cursor: pointer;
+  z-index: 200;
+
+  @include media-query(lg) {
+    padding: 0 1em;
+  }
 
   .navbar__left {
     .navbar__title {
@@ -24,12 +35,20 @@
       margin-left: 10em;
       margin-right: 8em;
 
-      .navbar__item {
-        list-style: none;
+      @include media-query(lg) {
+        gap: 2em;
+
+        margin-left: 5em;
+        margin-right: 3em;
       }
 
-      .navbar__item:hover {
-        transform: scale(1.05);
+      .navbar__item {
+        list-style: none;
+
+        transition: 0.2s;
+        &:hover {
+          transform: translateY(-2px);
+        }
       }
     }
   }
@@ -52,6 +71,12 @@
     .navbar__sign-up {
       outline: solid 2px $color-white;
       border-radius: 10px;
+      transition: 0.2s;
+
+      &:hover {
+        background-color: $color-white;
+        color: $color-dark-blue;
+      }
     }
   }
 
